@@ -19,13 +19,6 @@ func usage() {
 		log.Fatal("Unable to get the executable path!", err)
 	}
 
-	/*
-		Usage: /var/folders/t6/nc1rsrtj2v39zrct5xkzfxyh0000gp/T/go-build051405950/b001/exe/tfvarser:
-		         --hcls stringArray   HCL formatted config
-		         --json stringArray   JSON formatted config
-		     -o, --output string      Output format. Must be one of 'hcl' or 'json' (default "hcl")
-	*/
-
 	fmt.Printf("Usage: %s [flags]\n", ex)
 	fmt.Println("\nMerge JSON and HCL configurations, allowing output in either HCL or JSON format")
 	fmt.Println("Configs are processed in the order they are specified, reguardless of format.\n")
